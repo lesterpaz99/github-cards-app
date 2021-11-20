@@ -5,7 +5,7 @@ function CardList({ profiles }) {
   return (
     <ul>
       {profiles.map((user) => (
-        <Card {...user} />
+        <Card key={profiles.id} {...user} />
       ))}
     </ul>
   );
